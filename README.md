@@ -1,7 +1,7 @@
 # Nike Inc — 3-Statement Financial Model
 **Built by:** Matthieu Coignet  
 **Program:** MS Finance candidate, UIC (Aug 2026)  
-**Date:** June 2025  
+**Date:** June 2026  
 
 ---
 
