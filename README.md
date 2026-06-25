@@ -74,7 +74,28 @@ Cash Flow Statement, Balance Sheet) built from scratch on Nike Inc
 
 ---
 
-## Next Steps
-- DCF valuation with WACC/CAPM and sensitivity analysis
+## Next Steps — Completed
+
+### Project 2 — DCF Valuation Model
+Built on top of this 3-statement model. 
+
+**What was added:**
+- 5-year FCFF projections (FY2026E–FY2030E)
+- WACC: 8.33% (CAPM β 0.83, ERP 5.5% Damodaran, Rf 4.4%)
+- Terminal Value via Gordon Growth Model (g = 2.5%)
+- Enterprise Value: $103bn | Equity Value: $102bn
+- Implied Share Price: $67 — **HOLD recommendation**
+
+**Scenario Analysis:**
+| Scenario | WACC | g | Price Target | vs Market |
+|---|---|---|---|---|
+| Bear Case | 9.33% | 1.50% | $52 | -31% |
+| Base Case | 8.33% | 2.50% | $67 | -11% |
+| Bull Case | 7.33% | 3.50% | $98 | +31% |
+
+**Investment Recommendation:**
+HOLD at $75. Upgrade to BUY on confirmation of EBIT margin recovery above 13% in FY2026 and sustained China rebound.
+
+### Coming Next
 - Comparable company analysis (Adidas, Puma, Under Armour)
 - Monte Carlo scenario analysis on key assumptions
