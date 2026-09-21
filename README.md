@@ -73,28 +73,27 @@ Cash Flow Statement, Balance Sheet) built from scratch on Nike Inc
 - Financial KPI benchmarking vs sector
 
 ---
-
 ## Next Steps — Completed
 
 ### Project 2 — DCF Valuation Model
-Built on top of this 3-statement model. 
+Built on top of this 3-statement model. See: Nike_DCF_Model_Matthieu_Coignet.xlsx
 
 **What was added:**
 - 5-year FCFF projections (FY2026E–FY2030E)
-- WACC: 8.33% (CAPM β 0.83, ERP 5.5% Damodaran, Rf 4.4%)
+- WACC: 10.76% (CAPM β 1.32, ERP 5.5% Damodaran, Rf 4.4%)
 - Terminal Value via Gordon Growth Model (g = 2.5%)
 - Enterprise Value: $103bn | Equity Value: $102bn
-- Implied Share Price: $67 — **HOLD recommendation**
+- Implied Share Price: $67 — **BUY recommendation vs $45 market price (Jun 2026)**
 
 **Scenario Analysis:**
-| Scenario | WACC | g | Price Target | vs Market |
+| Scenario | WACC | g | Price Target | vs Market ($45) |
 |---|---|---|---|---|
-| Bear Case | 9.33% | 1.50% | $52 | -31% |
-| Base Case | 8.33% | 2.50% | $67 | -11% |
-| Bull Case | 7.33% | 3.50% | $98 | +31% |
+| Bear Case | 9.33% | 1.50% | $52 | +15% |
+| Base Case | 8.33% | 2.50% | $67 | +49% |
+| Bull Case | 7.33% | 3.50% | $98 | +118% |
 
 **Investment Recommendation:**
-HOLD at $75. Upgrade to BUY on confirmation of EBIT margin recovery above 13% in FY2026 and sustained China rebound.
+BUY at $45. All three scenarios imply upside vs current market price. Base case DCF implies +49% upside. Model uses β 1.32 (Yahoo Finance Jun 2026) and $45 reference price.
 
 ### Coming Next
 - Comparable company analysis (Adidas, Puma, Under Armour)
