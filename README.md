@@ -1,15 +1,13 @@
 # Nike Inc — 3-Statement Financial Model
-**Built by:** Matthieu Coignet  
-**Program:** MS Finance candidate, UIC (Aug 2026)  
-**Date:** June 2026  
+
+**Built by:** Matthieu Coignet
+**Program:** MS Finance candidate, UIC (Aug 2026)
+**Date:** June 2026
 
 ---
 
 ## Overview
-A fully integrated 3-statement financial model (Income Statement, 
-Cash Flow Statement, Balance Sheet) built from scratch on Nike Inc 
-(NKE) using public SEC filings. Includes 3 years of historical data 
-(FY2023-2025) and 2 years of projections (FY2026E-2027E).
+A fully integrated 3-statement financial model (Income Statement, Cash Flow Statement, Balance Sheet) built from scratch on Nike Inc (NKE) using public SEC filings. Includes 3 years of historical data (FY2023-2025) and 2 years of projections (FY2026E-2027E).
 
 ---
 
@@ -32,35 +30,28 @@ Cash Flow Statement, Balance Sheet) built from scratch on Nike Inc
 ---
 
 ## Key Findings — Historical (FY2023-2025)
-- **Revenue** declined -9.8% in FY2025 to $46.3bn — broad-based 
-  weakness across all segments
-- **Gross Margin** compressed to 42.7% in FY2025 from 44.6% in FY2024 
-  driven by higher promotions and DTC mix shift
-- **Net Income** fell -43.5% to $3.2bn — worst performance in 10 years
-- **FCF** declined -50.6% to $3.3bn — despite CapEx cuts to $430mm
-- **Debt/EBITDA** deteriorated to 1.8x from 1.1x — EBITDA compression, 
-  not leverage increase
+- Revenue declined -9.8% in FY2025 to $46.3bn — broad-based weakness across all segments
+- Gross Margin compressed to 42.7% in FY2025 from 44.6% in FY2024 driven by higher promotions and DTC mix shift
+- Net Income fell -43.5% to $3.2bn — worst performance in 10 years
+- FCF declined -50.6% to $3.3bn — despite CapEx cuts to $430mm
+- Debt/EBITDA deteriorated to 1.8x from 1.1x — EBITDA compression, not leverage increase
 
 ---
 
 ## Projection Assumptions (FY2026E-2027E)
-- Revenue growth +5%/+7% — recovery driven by product cycle refresh 
-  and channel normalization
-- Gross Margin recovery to 44.5%/45.0% — input cost normalization 
-  and reduced promotional activity
-- CapEx 3.5%/3.4% of revenue — asset-light strategy continuation
+- Revenue growth +5%/+7% — recovery driven by product cycle refresh and channel normalization
+- Gross Margin recovery to 44.5%/45.0% — input cost normalization and reduced promotional activity
+- CapEx 3.5%/3.4% of revenue — normalization assumption, above FY2023-25 actual avg (~1.5%)
 - Buybacks reduced to $2bn/year — conservative given FCF compression
 - Full assumption documentation in 01-Assumption tab
 
 ---
 
 ## Model Architecture
-- All projections driven by 01-Assumption — change one input, 
-  entire model updates
+- All projections driven by 01-Assumption — change one input, entire model updates
 - Cross-sheet links: IS → CFS (Net Income) → BS (Cash, Retained Earnings)
 - Balance Sheet integrity check = 0 for all 3 historical years
-- Color convention: Blue = hardcoded input | Black = formula | 
-  Green = cross-sheet link
+- Color convention: Blue = hardcoded input | Black = formula | Green = cross-sheet link
 
 ---
 
@@ -73,28 +64,31 @@ Cash Flow Statement, Balance Sheet) built from scratch on Nike Inc
 - Financial KPI benchmarking vs sector
 
 ---
+
 ## Next Steps — Completed
 
 ### Project 2 — DCF Valuation Model
-Built on top of this 3-statement model. See: Nike_DCF_Model_Matthieu_Coignet.xlsx
+Built on top of this 3-statement model. See: `Nike_DCF_Model_Matthieu_Coignet.xlsx`
 
 **What was added:**
 - 5-year FCFF projections (FY2026E–FY2030E)
-- WACC: 10.76% (CAPM β 1.32, ERP 5.5% Damodaran, Rf 4.4%)
+- WACC: 10.76% (CAPM β 1.32, ERP 5.5% long-run historical, Rf 4.4%) — Note: Damodaran implied ERP Jan 2026: 4.23%
 - Terminal Value via Gordon Growth Model (g = 2.5%)
-- Enterprise Value: $103bn | Equity Value: $102bn
-- Implied Share Price: $67 — **BUY recommendation vs $45 market price (Jun 2026)**
+- Enterprise Value: $73bn | Equity Value: $73bn
+- Implied Share Price: $48 — HOLD recommendation vs $45 market price (Jun 2026)
 
 **Scenario Analysis:**
 | Scenario | WACC | g | Price Target | vs Market ($45) |
 |---|---|---|---|---|
-| Bear Case | 9.33% | 1.50% | $52 | +15% |
-| Base Case | 8.33% | 2.50% | $67 | +49% |
-| Bull Case | 7.33% | 3.50% | $98 | +118% |
+| Bear Case | 11.76% | 1.50% | $40 | -12% |
+| Base Case | 10.76% | 2.50% | $48 | +6% |
+| Bull Case | 9.76% | 3.50% | $60 | +34% |
 
 **Investment Recommendation:**
-BUY at $45. All three scenarios imply upside vs current market price. Base case DCF implies +49% upside. Model uses β 1.32 (Yahoo Finance Jun 2026) and $45 reference price.
+HOLD at $45. Base case implies +6% upside ($48 target). Bear case implies -12% downside. Upgrade to BUY on confirmation of EBIT margin recovery above 13% in FY2026. Model uses β 1.32 (Yahoo Finance Jun 2026), ERP 5.5% long-run historical, $45 reference price (Jun 2026).
 
-### Coming Next
+---
+
+## Coming Next
 - Comparable company analysis (Adidas, Puma, Under Armour)
 - Monte Carlo scenario analysis on key assumptions
